@@ -7,6 +7,18 @@
     </RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.4</RuntimeVersion>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>Custom</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+    <CustomServerUrl>http://localhost:8088/wordpress/wp-admin</CustomServerUrl>
+    <CustomXdebugPort>9000</CustomXdebugPort>
+    <PublishEvent>None</PublishEvent>
+    <DebugMappingMethod>Automatic</DebugMappingMethod>
+    <DBGpProxyEnabled>false</DBGpProxyEnabled>
+    <DBGpProxyPort>9001</DBGpProxyPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -19,6 +31,8 @@
     <Compile Include=".vs\ProjectSettings.json" />
     <Compile Include=".vs\slnx.sqlite" />
     <Compile Include="condor-wp.php" />
+    <Compile Include="odata.php" />
+    <Compile Include="options.php" />
     <Compile Include="README.md" />
   </ItemGroup>
   <ItemGroup>
@@ -26,5 +40,8 @@
     <Folder Include=".vs\condor-wp\v16" />
     <Folder Include=".vs\condor-wp" />
     <Folder Include=".vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="condor.js" />
   </ItemGroup>
 </Project>
